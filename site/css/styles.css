@@ -1,39 +1,29 @@
 *{
-    /* margin: 5px;
-    padding: 0; */
-    box-sizing: border-box;
-    background-color: black;
+      /* margin: 0; */
+      /* padding: 0;
+      8 */
+    box-sizing: content-box;
 }
-/*** Dispositivos Grandes***/
-@media(min-width:992px) 
-{
-
-    }
-
-
-
-/** Dispositivos Medianos (Tablets) **/
-@media(max-width:991px) and (min-width: 768px)
-{
-
-}
-
-
-/** Small Devices **/
-@media(max-width:767px)
-{
-
+._Row{
+ width: 90%;
+ margin: auto;
+  
 }
 
 .Box_1, .Box_2, .Box_3{
-  width: 30.33%;  
+  width: 30.49%;  
   float: left;
-  margin: 10px;  
- background-color: #2a6ea5;
+  margin-left: 20px;
+  margin-top: 10px;
+  position: relative;
+  padding-top: 30px;  
+ background-color: #999999  ;  
+ border: 2px solid black;
 }
-.Fila{
-  margin: auto;
-}
+
+
+
+
 
 
 
@@ -41,33 +31,40 @@
 div._Tittle p{
     border-bottom: 2px solid rgb(0, 0, 0);
     border-left: 2px solid rgb(0, 0, 0);
-    width: 120px;
-    height: auto;
+    padding: 5px 55px;
     background-color: rgb(40, 102, 54);
-    position: relative;
+    position: absolute;
     text-align: center;
-    float: right;
+    top: 0;
+    right: 0;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
+.Box_1 ._Tittle p {
+    background-color: #D59898;
+}
+.Box_2 ._Tittle p {
+    background-color: #C14543;
+}
+.Box_3 ._Tittle p {
+    background-color: #E5D198;
+}
+
 
 h1 {
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
+    left: 0;
+    right: 0;
 }
 
 p{
-  /* width: 90%;
- font-size: 18px;
- background-color: blue; */
-border: 2px solid black;
+text-align: left;
 line-height: 1.3em;
 padding: 12px;
  margin: 0px;
- background-color: #2a6ea5;
- color: white;
  font-weight: 200;
  font-family: Verdana, Geneva, Tahoma, sans-serif;
 
@@ -75,3 +72,35 @@ padding: 12px;
 
 
 
+
+
+
+
+
+/** Dispositivos Medianos (Tablets) **/
+@media(max-width:991px) and (min-width: 768px)
+{
+.Box_3{
+    width: auto;
+    margin-left: 1%;
+}
+.Box_1, .Box_2 {
+    margin-left: 1%;
+    width: 48%;
+}
+.Box_1{
+margin-right: .7%;
+}
+}
+
+/** Small Devices **/
+@media(max-width:767px)
+{
+
+.Box_1,.Box_2,.Box_3{
+    width: 100%;
+margin: auto;
+margin-bottom: 10px;
+}
+
+}
