@@ -1,106 +1,62 @@
-*{
-      /* margin: 0; */
-      /* padding: 0;
-      8 */
-    box-sizing: content-box;
-}
-._Row{
- width: 90%;
- margin: auto;
-  
+body {
+	font-size: 16px;
+	color: rgb(0, 0, 0);
+	background-color: #ffffff;    
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.Box_1, .Box_2, .Box_3{
-  width: 30.49%;  
-  float: left;
-  margin-left: 20px;
-  margin-top: 10px;
-  position: relative;
-  padding-top: 30px;  
- background-color: #999999  ;  
- border: 2px solid black;
+/* Header section */
+#header-nav {
+	background-color: #C14543	;
+	border-radius: 0;
+	border: 2px solid black;
+	color: white;
 }
 
-
-
-
-
-
-
-
-div._Tittle p{
-    border-bottom: 2px solid rgb(0, 0, 0);
-    border-left: 2px solid rgb(0, 0, 0);
-    padding: 5px 55px;
-    background-color: rgb(40, 102, 54);
-    position: absolute;
-    text-align: center;
-    top: 0;
-    right: 0;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-}
-.Box_1 ._Tittle p {
-    background-color: #D59898;
-}
-.Box_2 ._Tittle p {
-    background-color: #C14543;
-}
-.Box_3 ._Tittle p {
-    background-color: #E5D198;
+.navbar-brand p {
+	color: white;
+	font-size: 20px;
 }
 
-
-h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    left: 0;
-    right: 0;
+.navbar-brand a:focus, .navbar-brand a:hover {
+	text-decoration: none;
 }
 
-p{
-text-align: left;
-line-height: 1.3em;
-padding: 12px;
- margin: 0px;
- font-weight: 200;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+#nav-list a {
+	color: white;
+	text-align: center;
 }
 
-
-
-
-
-
-
-
-/** Dispositivos Medianos (Tablets) **/
-@media(max-width:991px) and (min-width: 768px)
-{
-.Box_3{
-    width: auto;
-    margin-left: 1%;
+#nav-list a:hover {
+	background-color: #999999;
 }
-.Box_1, .Box_2 {
-    margin-left: 1%;
-    width: 48%;
-}
-.Box_1{
-margin-right: .7%;
-}
+/* END HEADER */
+
+/* Contenedor principal */
+#home {
+	margin-bottom: 30px;
 }
 
-/** Small Devices **/
-@media(max-width:767px)
-{
-
-.Box_1,.Box_2,.Box_3{
-    width: 100%;
-margin: auto;
-margin-bottom: 10px;
+.row {
+	
+	position: relative;
+	float: left;
 }
 
+.row > div > article {
+	background-color: #999999	;
+	text-align: justify;
+	margin-bottom: 20px;
+	padding: 12px;
+	color: black;
+	border: 1.3px solid black;
+}
+/* End Section */
+
+
+@media (max-width: 767px) {
+	.row > div > article {
+		width: 80%;
+		margin: 20px auto 0;
+	}
 }
